@@ -1,0 +1,269 @@
+body 
+{
+	background-color: #555555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center; 			/* force centering of page for all browsers */
+}
+
+h1
+{
+	font-size: 32px;
+	text-align:center; 
+	margin:0px;
+}
+
+h2
+{
+	font-size:24px; 
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+h3
+{
+	font-size:16px; 
+	margin-bottom:10px;
+}
+
+p
+{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+p.interface
+{
+	margin-top: 0;
+	margin-bottom: 8pt;
+}
+
+.emphasize
+{
+	font-weight:bold;
+}
+
+
+#container 
+{
+	background-color:#CCCCCC;		/* this needs to be the same color as the leftBar */
+	width: 1240px;					/* Subtract 40 pixels from the target resolution (760, 955, 1240) -rci10/17/2020-changed defaults to 1280*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	text-align: left; 				/* reset text alignment to normal */
+}
+
+#containerCD 						/* this is only used for the context diagram pages */
+{
+	background-color:#CCCCCC;		/* this needs to be the same color as the leftBar */
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	text-align: left; 				/* reset text alignment to normal */
+}
+
+#content 
+{
+	background-color: #EEEEEE;
+	width: 1080px;  				/* container width minus leftBar width minus 20px more-rci10/17/2020-changed defaults to 1280*/
+	float:right;
+	min-height: 500px;
+	padding: 4px; 
+	color:#000000;
+}
+
+#contentCD                          /* this is only used for the context diagram pages */
+{
+	background-color: #EEEEEE;
+	float:right;
+	min-height: 500px;
+	padding: 4px; 
+	color:#000000;
+}
+
+
+#header 
+{
+	background-image: url("../images/banner.png");
+	height:50px; 					/* This needs to be the height of the above background image */
+	background-repeat:no-repeat; 
+	background-color: #400040;
+	position:relative;
+	color:#FFFFFF;
+}
+
+#footer 
+{
+	background-color: #919191;
+	clear:both;
+	text-align:center; 
+	color:#000000;
+}
+
+
+
+/************************** Navigation CSS *******************************/
+#leftBar 
+{
+	background-color: #CCCCCC; 		/* this needs to be the same color as the container */
+	width: 140px;  
+	float:left;
+	padding: 4px; 
+	color:#000000;
+}
+
+.navFirstLevel  
+{
+	font-size:14px;
+	text-decoration:none; 
+	padding:2px;
+}
+
+.navSecondLevel
+{
+	font-size:12px;
+	text-indent:15px;
+	padding:2px;
+}
+
+.defaultNavItem
+{
+	color:#000000;
+	text-decoration: none; 
+}
+
+.selectedNavItem
+{
+	color:#0000FF;
+	font-weight:bold;
+	text-decoration: none; 
+}
+
+/********Class skip added to hide skip to content links until they have the focus 4/17/2024 *******/
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+/******************End of Navigation CSS *******************************/
+
+
+#contactEmail
+{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px; 
+}
+
+#contactPhone
+{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px; 
+}
+
+#version
+{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:12px; 
+}
+
+
+
+/***************** Table CSS ****************************/
+
+table
+{
+	margin-top:0px;
+	border-collapse: collapse;
+	width:inherit;
+	font-size:14px; 
+}
+
+th, td
+{
+	border:solid;
+	border-width:2px;
+	border-color:#000000;
+	padding: 5px; 
+}
+
+th
+{
+	background-color:#3366CC;
+	color:#FFFFFF;
+}
+
+th#specialHighlight 
+{
+    background-color: #EEEEEE;
+    color: #333333;
+}
+
+.highlight
+{
+	background-color:#FFFFCC;
+}
+
+.sansBorder, .contextCell
+{
+	border:none;
+	vertical-align:top;
+	margin-top:0px;
+	padding-top:0px;
+	margin-left:0px;
+	padding-left:0px;
+}
+
+
+
+
+/************End of Table CSS ****************************/
+
+/**********The following allows short paragraphs to move up next to a heading***********/
+
+h3.float-left-context /* header element float */
+{
+	float: left;
+	margin: 16px 0.2em 10px 0;
+}
+  
+p.top-context /* after header margin adjustment */
+{
+
+	margin: 16px 0.2em 10px 0;
+	padding: 0.17em;
+	text-indent: 1em;
+}
+
+/* header element float */
+h3.float-left 
+{
+	float: left;
+	margin: 0 0.2em 0 0;
+}
+
+/* after header margin adjustment */  
+p.top 
+{
+	margin-top: 0.2em;
+	padding: 0.17em;
+ 	text-indent: 1em;
+}
+
+/**********************************************************************************/

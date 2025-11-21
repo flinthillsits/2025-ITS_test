@@ -1,0 +1,1 @@
+Don't delete or modify the directory structure because it is baseline directory structure for the web page generation.
